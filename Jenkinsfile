@@ -26,10 +26,10 @@ pipeline {
             steps {
                 sh '''
                     echo "Testing has started ..."
+                    ls -la
                     if test -f build/index.html; then
                         echo "File exists"
                     fi
-                    npm --version
                 '''
             }
         }

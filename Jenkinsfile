@@ -24,7 +24,7 @@ pipeline {
             
             steps {
                 sh '''
-                    echo "Testing has started ..."
+                    echo "Test stage"
                     ls -la
                     if test -f build/index.html; then
                         echo "File exists"
